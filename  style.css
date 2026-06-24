@@ -1,0 +1,209 @@
+css/* Configurações Gerais e Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --verde-escuro: #1E4620;
+    --verde-principal: #2E7D32;
+    --verde-claro: #E8F5E9;
+    --marrom-terra: #4E342E;
+    --amarelo-detalhe: #FBC02D;
+    --texto-escuro: #263238;
+    --fundo-limpo: #FAFAFA;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--fundo-limpo);
+    color: var(--texto-escuro);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Menu de Navegação */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--verde-escuro);
+}
+
+.nav-logo span {
+    color: var(--amarelo-detalhe);
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--marrom-terra);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: var(--verde-principal);
+}
+
+/* Seção Hero */
+.hero {
+    background: linear-gradient(rgba(30, 70, 32, 0.8), rgba(78, 52, 46, 0.7)), 
+                url('https://unsplash.com') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+.hero-btn {
+    display: inline-block;
+    background-color: var(--amarelo-detalhe);
+    color: var(--marrom-terra);
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.hero-btn:hover {
+    background-color: #fdd835;
+    transform: translateY(-2px);
+}
+
+/* Seção Sobre / Importância */
+.sobre {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.sobre h2 {
+    font-size: 32px;
+    color: var(--verde-escuro);
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #546E7A;
+}
+
+/* Seção de Cards (Flexbox) */
+.cards-section {
+    padding: 60px 0 100px 0;
+}
+
+.flex-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #ffffff;
+    flex: 1;
+    min-width: 280px;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+    border-top: 5px solid var(--verde-principal);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 20px;
+    color: var(--marrom-terra);
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 15px;
+    color: #607D8B;
+}
+
+/* Rodapé */
+.footer {
+    background-color: var(--marrom-terra);
+    color: var(--verde-claro);
+    text-align: center;
+    padding: 30px 20px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* Responsividade (Telas menores) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+    
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .flex-cards {
+        flex-direction: column;
+    }
+}
