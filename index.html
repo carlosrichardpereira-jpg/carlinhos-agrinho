@@ -3,64 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Agrinho - Drones no Campo</title>
+    <title>Projeto Agrinho - Defensivos Naturais</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://googleapis.com">
-    <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- Menu de Navegação -->
     <header class="navbar">
-        <div class="nav-logo">Agrinho<span>Tech</span></div>
-        <nav class="nav-menu">
-            <a href="#home">Início</a>
-            <a href="#sobre">Importância</a>
-            <a href="#beneficios">Benefícios</a>
+        <div class="logo">Projeto Agrinho</div>
+        <nav class="nav-links">
+            <a href="#inicio">Início</a>
+            <a href="#importancia">Importância</a>
+            <a href="#dicas">Dicas</a>
         </nav>
     </header>
 
-    <!-- Seção Hero -->
-    <section id="home" class="hero">
+    <!-- Seção Hero: Receitas Caseiras -->
+    <section id="inicio" class="hero">
         <div class="hero-content">
-            <h1>Olhos no Céu, Pés na Terra</h1>
-            <p>Descubra como os drones revolucionam o monitoramento agrícola, protegendo o meio ambiente com zero gasto de combustível.</p>
-            <a href="#beneficios" class="hero-btn">Ver Tecnologia</a>
+            <h1>Defensivos Naturais e Sustentabilidade no Campo</h1>
+            <p>Combata as pragas da sua lavoura de forma ecológica, sem o uso de venenos químicos. Proteja sua saúde e o meio ambiente.</p>
+            <div class="recipes-container">
+                <div class="recipe-card">
+                    <h3>Calda Bordalesa</h3>
+                    <p><strong>Uso:</strong> Combate fungos e bactérias.</p>
+                    <p><strong>Preparo:</strong> Dissolva 100g de sulfato de cobre em 5L de água. Em outro balde, misture 100g de cal virgem em 5L de água. Junte as duas soluções lentamente.</p>
+                </div>
+                <div class="recipe-card">
+                    <h3>Extrato de Fumo</h3>
+                    <p><strong>Uso:</strong> Combate pulgões e lagartas.</p>
+                    <p><strong>Preparo:</strong> Pique 100g de fumo em corda e coloque em 1L de água com um copo de álcool. Deixe curtir por 24 horas. Coe e dilua em 10L de água com sabão neutro.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Seção Sobre / Importância -->
-    <section id="sobre" class="sobre">
+    <!-- Seção Importância -->
+    <section id="importancia" class="importance">
         <div class="container">
-            <h2>Tecnologia Sustentável no Campo</h2>
-            <p>O Projeto Agrinho apoia a inovação consciente. O uso de drones na agricultura substitui vistorias feitas por veículos motorizados poluentes. Voando de forma 100% elétrica, essa tecnologia reduz custos econômicos e ambientais, permitindo uma gestão rápida, segura e precisa da propriedade rural.</p>
+            <h2>A Importância do Cultivo Livre de Químicos</h2>
+            <p>Adotar métodos biológicos e naturais para o controle de pragas vai além de proteger a plantação. Essa prática preserva os microrganismos benéficos do solo, evita a contaminação dos lençóis freáticos e garante alimentos muito mais saudáveis e ricos em nutrientes na mesa de milhares de famílias brasileiras.</p>
         </div>
     </section>
 
-    <!-- Seção de Cards (Benefícios) -->
-    <section id="beneficios" class="cards-section">
-        <div class="container flex-cards">
+    <!-- Seção de 3 Cards Alinhados -->
+    <section id="dicas" class="cards-section">
+        <div class="container grid-cards">
             
-            <!-- Card 1 -->
-            <div class="card">
-                <div class="card-icon">🌳</div>
-                <h3>Combate ao Desmatamento</h3>
-                <p>Mapeia áreas de preservação em minutos. Imagens aéreas de alta resolução detectam cortes ilegais ou invasões rapidamente.</p>
+            <div class="info-card">
+                <div class="card-icon">🐛</div>
+                <h3>Identificação</h3>
+                <p>Monitore sua horta diariamente para identificar o início de qualquer infestation de insetos.</p>
             </div>
 
-            <!-- Card 2 -->
-            <div class="card">
-                <div class="card-icon">🔥</div>
-                <h3>Focos de Incêndio</h3>
-                <p>Monitoramento térmico em tempo real. Identifica pontos de calor extremo antes que o fogo se espalhe pela plantação.</p>
+            <div class="info-card">
+                <div class="card-icon">⏰</div>
+                <h3>Aplicação Ideal</h3>
+                <p>Aplique os defensivos caseiros sempre no fim da tarde para evitar que o sol queime as folhas.</p>
             </div>
 
-            <!-- Card 3 -->
-            <div class="card">
-                <div class="card-icon">🌱</div>
-                <h3>Saúde das Plantas</h3>
-                <p>Sensores detectam pragas e estresse hídrico. O produtor visualiza anomalias na lavoura pela coloração das folhas.</p>
+            <div class="info-card">
+                <div class="card-icon">🐝</div>
+                <h3>Biodiversidade</h3>
+                <p>Preserve as joaninhas e abelhas! Elas ajudam no controle biológico e na polinização natural.</p>
             </div>
 
         </div>
@@ -68,7 +73,7 @@
 
     <!-- Rodapé -->
     <footer class="footer">
-        <p>Desenvolvido por: [Inserir Nomes]</p>
+        <p>Desenvolvido por: <strong>CARLOS EDUARDO RICHARD PEREIRA</strong></p>
     </footer>
 
 </body>
